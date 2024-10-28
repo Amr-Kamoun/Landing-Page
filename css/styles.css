@@ -1,0 +1,136 @@
+/* Reset basic margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1em;
+}
+
+#navbar li {
+    margin: 0 1em;
+}
+
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar li.active a {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+/* Section Styling */
+section {
+    position: relative;
+    padding: 80px 20px 30px; /* Reduced bottom padding */
+    min-height: 100vh; /* Ensure full viewport height */
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    transition: opacity 0.5s ease-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Georgia', serif;
+    opacity: 1; /* Make sections visible by default */
+}
+
+/* Section titles */
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 3px solid #333; /* Underline for section titles */
+    padding-bottom: 0.2em;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 1em 0;
+    color: #555;
+    text-align: justify; /* Justify text alignment */
+}
+
+/* List styling inside sections */
+section ul {
+    text-align: left;
+    padding-left: 1.5em;
+    margin-top: 1em;
+}
+
+section ul li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Review section styles */
+#section4 ul.customer-comments {
+    list-style-type: disc;
+    padding-left: 2em;
+    margin-top: 1em;
+    text-align: left;
+}
+
+#section4 ul.customer-comments li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Animation definitions */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations on visibility */
+.fade-in-scale { animation: fadeInScale 1s forwards; }
+.fade-in-up { animation: fadeInUp 1s forwards; }
