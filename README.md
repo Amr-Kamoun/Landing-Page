@@ -8,5 +8,3 @@ This project is a responsive landing page that showcases a dynamic navigation me
 - **Active Link Highlighting**: The active navigation link highlights as the user scrolls to the respective section.
 - **Smooth Scrolling**: Smooth scrolling experience when navigating between sections.
 - **Section Animations**: Each section features a unique animation as it comes into view, adding visual appeal.
-
-## File Structure
